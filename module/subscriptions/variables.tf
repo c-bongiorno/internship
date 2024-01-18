@@ -6,9 +6,9 @@ variable "subscriptions" {
 }
 
 variable "billing_enrollment_account_scope" {
-    type = object({
-      billing_account_name = string
-      enrollment_account_name = string
-    })
-  
+  type = object({
+    billing_account_name    = string
+    enrollment_account_name = string
+  })
+
 }
