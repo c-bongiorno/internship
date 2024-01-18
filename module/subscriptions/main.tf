@@ -9,6 +9,6 @@ resource "azurerm_subscription" "subscription" {
   for_each = var.subscriptions
 
   subscription_name = each.value.subscription_name
-  billing_scope_id  = data.azurerm_billing_enrollment_account_scope.billing_enrollment_account.id
+  billing_scope_id  = data.azurerm_billing_enrollment_account_scope.billing_enrollment_account["0123456"].id
 
 }
